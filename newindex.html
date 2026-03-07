@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#0274be">
+<title>Shri Yoga · Flex Fix Fun · Maryland &amp; Online</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== ANNOUNCEMENT BAR ===== -->
+<div class="announcement-bar">
+  🌟 In-person classes now in Clarksburg &amp; SSVT, Maryland! <a href="#classes">View Schedule →</a>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo"><img src="https://shri-yoga.org/wp-content/uploads/2020/08/ShriYoga-Logo.webp" alt="Shri Yoga"></a>
+    <button class="hamburger" id="menuBtn" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <button class="nav-close" onclick="toggleMenu()">✕</button>
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#classes" onclick="closeMenu()">Classes</a></li>
+      <li><a href="#teachers" onclick="closeMenu()">Teachers</a></li>
+      <li><a href="#events" onclick="closeMenu()">Events</a></li>
+      <li><a href="#photos" onclick="closeMenu()">Photos</a></li>
+      <li><a href="#videos" onclick="closeMenu()">Videos</a></li>
+      <li><a href="#about" onclick="closeMenu()">About</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      <li class="nav-donate-li"><a href="#donate" class="nav-donate-btn" onclick="closeMenu()">❤ Donate</a></li>
+    </ul>
+    <div class="nav-overlay" id="navOverlay" onclick="closeMenu()"></div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HOME
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="hero-eyebrow">Welcome to Shri Yoga</span>
+    <h1>Start A Healthy Way<br>Of Life, Today</h1>
+    <p class="hero-sub">Free yoga for all ages &amp; levels · Flex Fix Fun · Maryland &amp; Online</p>
+    <div class="hero-buttons">
+      <a href="#classes" class="btn btn-primary">View Schedule</a>
+      <a href="#about" class="btn btn-outline">Learn More</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">70+</span><span class="stat-label">Classes/Week</span></div>
+    <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Teachers</span></div>
+    <div class="stat"><span class="stat-num">1200+</span><span class="stat-label">Students</span></div>
+    <div class="stat"><span class="stat-num">Free</span><span class="stat-label">All Classes</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>What We Offer</h2>
+      <p>Calming but challenging yoga in an informal group environment — open to everyone, always free.</p>
+    </div>
+    <div class="card-grid">
+      <div class="card"><div class="card-icon">🧘</div><h3>Yoga Classes</h3><p>Regular, Intermediate, Easy, Chair, Kids, and Silent yoga classes for all ages and fitness levels.</p><a href="#classes" class="card-link">See Schedule →</a></div>
+      <div class="card"><div class="card-icon">🌬️</div><h3>Pranayama</h3><p>Daily morning breathing sessions — our most popular offering, helping you start the day energized.</p><a href="#classes" class="card-link">Learn More →</a></div>
+      <div class="card"><div class="card-icon">🧠</div><h3>Meditation</h3><p>Evening meditation classes to help you relax, unwind, and enjoy deeper more restful sleep.</p><a href="#classes" class="card-link">Learn More →</a></div>
+      <div class="card"><div class="card-icon">👶</div><h3>Kids Yoga</h3><p>Fun and engaging yoga for kids aged 4–14. Kids can earn SSL hours by leading their own classes!</p><a href="#classes" class="card-link">Learn More →</a></div>
+      <div class="card"><div class="card-icon">🦴</div><h3>Specialty Classes</h3><p>Osteoporosis, Acupressure, Chair Yoga, Sun Salutations, and Juno Wellness by expert instructors.</p><a href="#classes" class="card-link">Learn More →</a></div>
+      <div class="card"><div class="card-icon">🎓</div><h3>Expert Sessions</h3><p>Periodic sessions on Vedanta, Nutrition, Ayurveda, Parkinson's, MS, and more wellness topics.</p><a href="#events" class="card-link">Events →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-header">
+      <h2>Upcoming Events</h2>
+      <p>Special sessions, workshops, and community gatherings — all free and open to everyone.</p>
+    </div>
+    <div class="center-btn"><a href="#events" class="btn btn-blue">View All Events</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="about-split">
+      <div class="about-text">
+        <span class="eyebrow">Meet Our Founder</span>
+        <h2>Shri Sabnis</h2>
+        <p>Fondly known as "Shri Ji" and "Shri Kaka," Shrikant Sabnis retired after 40 years in safety-critical engineering to dedicate his life to teaching yoga and spreading love and compassion.</p>
+        <p>For over 12 years, he has conducted free yoga classes at temples, community halls, volunteer homes, and online — growing to 1,200+ students worldwide.</p>
+        <ul class="about-highlights">
+          <li>✅ Certified RYT 200 — Vinyasa yoga</li>
+          <li>✅ 500+ hours of teacher training</li>
+          <li>✅ Trained in Sudarshan Kriya &amp; Vipassana</li>
+          <li>✅ Inspired 30+ certified practitioners</li>
+        </ul>
+        <a href="#about" class="btn btn-primary">Full Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-gradient">
+  <div class="container">
+    <div class="section-header light">
+      <h2>What Our Community Says</h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card"><p>"Shri Yoga has transformed my mornings. The pranayama classes are the best way to start the day — I feel energized and centered."</p><div class="testimonial-author">— Community Member, Maryland</div></div>
+      <div class="testimonial-card"><p>"Shri Kaka is more than a yoga teacher — he is a mentor and a father figure. The love he brings to every class is extraordinary."</p><div class="testimonial-author">— Student, Virginia</div></div>
+      <div class="testimonial-card"><p>"My kids absolutely love the kids yoga class. They've become more focused, flexible, and are teaching poses to their friends!"</p><div class="testimonial-author">— Parent, Maryland</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="donate">
+  <div class="container">
+    <div class="donate-inner">
+      <div class="donate-text">
+        <span class="eyebrow">Support Our Mission</span>
+        <h2>All Classes Are Free.<br>Your Donation Keeps It That Way.</h2>
+        <p>Shri Yoga Inc. is a registered 501(c)(3) non-profit. Every dollar supports our platform, teachers, and community programs.</p>
+        <div class="donate-methods">
+          <div class="donate-method"><strong>💚 Zelle (Preferred)</strong><br>president@shri-yoga.org</div>
+          <div class="donate-method"><strong>💙 PayPal</strong><br>admin@shri-yoga.org</div>
+          <div class="donate-method"><strong>📬 Check</strong><br>Payable to "SHRI YOGA INC"<br>13425 Winterspoon Ln, Germantown, MD 20874</div>
+        </div>
+      </div>
+      <div>
+        <div class="donate-card">
+          <h3>Make a Difference</h3>
+          <p>Your generosity keeps yoga free and accessible for everyone — children to seniors, beginners to advanced.</p>
+          <a href="#contact" class="btn btn-outline btn-block">❤ Donate Now</a>
+          <p class="donate-note">Tax-deductible · 501(c)(3) Nonprofit</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-light">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div>
+        <h3>Stay Connected</h3>
+        <p>Get updates on new classes, events, and community news.</p>
+      </div>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email address" required>
+        <a href="#" class="btn btn-primary">Subscribe</a>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CLASSES
+     ============================================================ -->
+<div id="classes">
+  <div class="page-hero"><h1>Classes</h1><p>70+ free yoga classes every week for all ages, levels, and abilities. Online and in-person options available.</p></div>
+  <section class="section"><div class="container">
+    <div class="info-banner">
+      <strong>📢 Good News!</strong> In-person classes have started in <strong>Rockville</strong>, <strong>Germantown</strong>, <strong>Clarksburg</strong> and <strong>SSVT, Maryland</strong>.
+    </div>
+    <div class="section-header"><h2>Class Types</h2><p>From beginner-friendly to advanced — we have something for every body and schedule.</p></div>
+    <div class="class-types">
+      <div class="class-type"><div class="class-type-icon">🧘</div><h4>Regular</h4><p>Full yoga with asanas, breathing &amp; relaxation.</p></div>
+      <div class="class-type"><div class="class-type-icon">🌬️</div><h4>Pranayama</h4><p>Morning &amp; evening breathing sessions.</p></div>
+      <div class="class-type"><div class="class-type-icon">⭐</div><h4>Intermediate</h4><p>Advanced sequences for experienced students.</p></div>
+      <div class="class-type"><div class="class-type-icon">🌿</div><h4>Easy / Chair</h4><p>Gentle practice for seniors or mobility needs.</p></div>
+      <div class="class-type"><div class="class-type-icon">🧠</div><h4>Meditation</h4><p>Evening meditation for relaxation &amp; sleep.</p></div>
+      <div class="class-type"><div class="class-type-icon">👶</div><h4>Kids Yoga</h4><p>Ages 4–14. SSL hours for teen instructors.</p></div>
+      <div class="class-type"><div class="class-type-icon">🦴</div><h4>Osteoporosis</h4><p>Specialist class led by a Physical Therapist.</p></div>
+      <div class="class-type"><div class="class-type-icon">🤲</div><h4>Acupressure</h4><p>Pressure-point healing with expert guidance.</p></div>
+    </div>
+    <div class="section-header" style="margin-top:56px;"><h2>Before You Join</h2></div>
+    <div class="card-grid" style="margin-bottom:56px;">
+      <div class="card" style="border-top-color:var(--green)"><div class="card-icon">👕</div><h3>What to Wear</h3><p>Comfortable, stretchy clothing. Yoga pants, leggings, or shorts. Bare feet preferred.</p></div>
+      <div class="card" style="border-top-color:var(--primary)"><div class="card-icon">🎒</div><h3>What to Bring</h3><p>Yoga mat, water bottle, small towel. Online: stable internet &amp; enough floor space.</p></div>
+      <div class="card" style="border-top-color:var(--orange)"><div class="card-icon">🍽️</div><h3>Before &amp; After</h3><p>Avoid heavy meals 2 hours before. Stay hydrated. Rest briefly after class.</p></div>
+    </div>
+    <div class="section-header"><h2>Weekly Schedule for Online Classes</h2><p>All times Eastern Time (ET). Swipe left to see full schedule on mobile.</p></div>
+    <p style="font-size:13px;color:var(--text-light);margin-bottom:12px;text-align:center;">← Scroll horizontally to see all days →</p>
+    <div class="schedule-overflow">
+      <table class="schedule-table">
+        <thead><tr><th>Time (ET)</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th></tr></thead>
+        <tbody>
+          <tr><td><strong>5:45am</strong></td><td><span class="class-pill">Regular 60min<br>Ashwini</span></td><td><span class="class-pill">Regular 60min<br>Niru</span></td><td><span class="class-pill">Regular 60min<br>Charuta</span></td><td><span class="class-pill">Regular 60min<br>Jayshri</span></td><td><span class="class-pill">Regular 60min<br>Dipti</span></td><td><span class="class-pill cancelled">Silent 60min CANCELLED</span></td><td><span class="class-pill cancelled">Silent 60min CANCELLED</span></td></tr>
+          <tr><td><strong>6:45am</strong></td><td colspan="7"><span class="class-pill">Pranayama 40min – Shri (Every Day)</span></td></tr>
+          <tr><td><strong>7:25am</strong></td><td><span class="class-pill">Chair 30min</span></td><td><span class="class-pill">Easy 30min</span></td><td><span class="class-pill">Chair 30min</span></td><td><span class="class-pill">Easy 30min</span></td><td><span class="class-pill">Chair 30min</span></td><td><span class="class-pill">Easy 30min</span></td><td><span class="class-pill">Chair 30min</span></td></tr>
+          <tr><td><strong>7:30am</strong></td><td><span class="class-pill">Intermed. 60min<br>Pravin</span></td><td><span class="class-pill">Intermed. 60min<br>Manju</span></td><td><span class="class-pill">Intermed. 60min<br>Poonam</span></td><td><span class="class-pill">Intermed. 60min<br>Suruchi</span></td><td><span class="class-pill">Intermed. 60min<br>Aruna Jr</span></td><td><span class="class-pill">Intermed. 60min<br>Sangeeta</span></td><td><span class="class-pill">Intermed. 60min<br>Sangeeta</span></td></tr>
+          <tr><td><strong>8:00am</strong></td><td colspan="7"><span class="class-pill">Pranayama 40min – Shri (Every Day)</span></td></tr>
+          <tr><td><strong>8:45am</strong></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><span class="class-pill">Regular 90min – Shri</span></td><td><span class="class-pill">Regular 90min – Ram</span></td></tr>
+          <tr><td><strong>11:00am</strong></td><td><span class="class-pill">Easy 75min – Kanchan</span></td><td><span class="class-pill">Easy 75min – Aruna Sr</span></td><td><span class="class-pill">Easy 75min – Shri</span></td><td><span class="class-pill">Easy 75min – Manju</span></td><td><span class="class-pill">Easy 75min – Rina</span></td><td><span class="class-pill">Juno Wellness – Minakshi</span></td><td><span class="class-pill">Easy 75min – TBD</span></td></tr>
+          <tr><td><strong>4:30pm</strong></td><td><span class="class-pill">Kids 30min</span></td><td>—</td><td><span class="class-pill">Kids 30min</span></td><td><span class="class-pill">Kids 30min</span></td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td><strong>5:30pm</strong></td><td><span class="class-pill">Easy/Chair 45min – Shri</span></td><td><span class="class-pill">Bone Health 60min – Asha</span></td><td><span class="class-pill">Easy/Chair 45min – Shri</span></td><td><span class="class-pill">Bone Health 60min – Asha</span></td><td><span class="class-pill">Osteoporosis 60min – Nishtha</span></td><td>—</td><td>—</td></tr>
+          <tr><td><strong>7:30pm</strong></td><td>—</td><td><span class="class-pill">Acupressure – Jagdish</span></td><td>—</td><td><span class="class-pill">Acupressure – Jagdish</span></td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td><strong>8:30pm</strong></td><td><span class="class-pill">Meditation 45min – Anagha</span></td><td><span class="class-pill">Meditation 30min – Anjali</span></td><td><span class="class-pill">Meditation 30min – Anjali</span></td><td><span class="class-pill">Meditation 45min – Shailaja</span></td><td><span class="class-pill">Meditation 45min – Krishna</span></td><td>—</td><td>—</td></tr>
+          <tr><td><strong>9:30pm</strong></td><td><span class="class-pill">Meditation 20min Shri</span></td><td><span class="class-pill">Meditation 20min Shri</span></td><td><span class="class-pill">Meditation 20min Shri</span></td><td><span class="class-pill">Meditation 20min Shri</span></td><td><span class="class-pill">Meditation 20min Shri</span></td><td><span class="class-pill">Meditation 20min Shri</span></td><td><span class="class-pill">Meditation 20min Shri</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="highlight-box" style="margin-top:28px;text-align:center;">
+      <h3>All classes are free.</h3>
+      <p style="margin:8px 0 16px;">Join via Zoom at the link below.</p>
+      <a href="#contact" class="btn btn-primary">Get Zoom Link</a>
+    </div>
+  </div></section>
+</div>
+
+<!-- ============================================================
+     TEACHERS
+     ============================================================ -->
+<div id="teachers">
+  <div class="page-hero"><h1>Our Teachers</h1><p>Meet the dedicated certified yoga practitioners who volunteer their time to serve our community.</p></div>
+  <section class="section"><div class="container">
+    <div class="section-header"><h2>Founder &amp; Lead Teacher</h2></div>
+    <div class="about-split" style="margin-bottom:64px;">
+      <div class="about-image">
+        <img src="media/images/ShriSabnis.png" alt="Shrikant Sabnis" style="width:100%;height:auto;border-radius:12px;display:block;">
+        <div class="about-badge">RYT 200 Certified · 500+ Hours Training</div>
+      </div>
+      <div class="about-text">
+        <span class="eyebrow">Founder &amp; Lead Instructor</span>
+        <h2>Shrikant "Shri Ji" Sabnis</h2>
+        <p>Fondly known as "Shri Ji" and "Shri Kaka," Shrikant Sabnis retired after 40 years in safety-critical engineering to dedicate his life to teaching yoga and spreading love and compassion in his community.</p>
+        <p>For over 12 years, he has conducted free yoga at temples, community halls, volunteer homes, and online — traveling 70 miles a day and growing from local classes to 1,200+ global students.</p>
+        <ul class="about-highlights">
+          <li>✅ Certified RYT 200 — OneAum Studio, Potomac MD</li>
+          <li>✅ 500+ hours yoga teacher training</li>
+          <li>✅ Trained in Sudarshan Kriya, Vipassana, 3-Step Rhythmic Breathing</li>
+          <li>✅ Inspired 30+ certified practitioners</li>
+          <li>✅ Featured by Voice of America</li>
+        </ul>
+        <p><strong>Classes:</strong> Regular, Pranayama, Intermediate, Meditation, Kids Yoga</p>
+      </div>
+    </div>
+    <div class="section-header"><h2>Certified Volunteer Teachers</h2><p>Our 30+ certified teachers volunteer across 70+ weekly classes.</p></div>
+    <div class="teachers-grid">
+      <div class="teacher-card"><div class="teacher-photo">🧘</div><div class="teacher-info"><h3>Nishtha</h3><div class="teacher-specialty">Physical Therapist · Osteoporosis</div><p>Licensed PT leading specialized Osteoporosis classes on Friday evenings — blending therapeutic movement with yoga for bone strength and balance.</p><span class="teacher-cert">Physical Therapist</span></div></div>
+      <div class="teacher-card"><div class="teacher-photo">🧘</div><div class="teacher-info"><h3>Jagdish</h3><div class="teacher-specialty">Acupressure Specialist</div><p>Leads Acupressure sessions Tuesday and Thursday evenings, integrating traditional pressure-point healing with wellness education.</p><span class="teacher-cert">Acupressure Practitioner</span></div></div>
+      <div class="teacher-card"><div class="teacher-photo">🧘</div><div class="teacher-info"><h3>Pravin</h3><div class="teacher-specialty">Intermediate Yoga · Monday</div><p>Brings precision to the Monday 7:30am Intermediate class, guiding students through advanced sequences with focus on alignment and breath.</p><span class="teacher-cert">Certified Yoga Teacher</span></div></div>
+      <div class="teacher-card"><div class="teacher-photo">🧘</div><div class="teacher-info"><h3>Anjali</h3><div class="teacher-specialty">Meditation · Tuesday Evenings</div><p>Guides the Tuesday 8:00pm Meditation session — a grounding practice helping participants unwind and cultivate mindful awareness.</p><span class="teacher-cert">Certified Meditation Teacher</span></div></div>
+      <div class="teacher-card"><div class="teacher-photo">🧘</div><div class="teacher-info"><h3>Suruchi</h3><div class="teacher-specialty">Sun Salutations · Sunday</div><p>Leads the energizing Sunday 8:30am Sun Salutations and Intermediate session. Her dynamic style inspires students to explore their potential.</p><span class="teacher-cert">Certified Yoga Teacher</span></div></div>
+      <div class="teacher-card"><div class="teacher-photo">🧘</div><div class="teacher-info"><h3>Kanchan</h3><div class="teacher-specialty">Easy Yoga · Monday</div><p>Creates a welcoming, low-intensity Monday 11am session perfect for beginners, seniors, or anyone seeking a gentler practice.</p><span class="teacher-cert">Certified Yoga Teacher</span></div></div>
+      <div class="teacher-card"><div class="teacher-photo">🧘</div><div class="teacher-info"><h3>Divya</h3><div class="teacher-specialty">Regular Yoga · Wednesday Eve</div><p>Teaches Wednesday 7pm Regular-75min class, combining traditional postures with breathwork for a comprehensive evening session.</p><span class="teacher-cert">Certified Yoga Teacher</span></div></div>
+      <div class="teacher-card"><div class="teacher-photo">🧘</div><div class="teacher-info"><h3>Charuta</h3><div class="teacher-specialty">Regular &amp; Meditation</div><p>Teaches the Wednesday morning Regular class AND the Wednesday 8:30pm Meditation — bringing versatility and dedication to our community.</p><span class="teacher-cert">Certified Yoga Teacher</span></div></div>
+    </div>
+    <div class="cta-box">
+      <h3>Are you a certified yoga teacher?</h3>
+      <p>Shri Yoga welcomes certified teachers who want to volunteer and serve the community. Join our growing family of 30+ instructors.</p>
+      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    </div>
+  </div></section>
+</div>
+
+<!-- ============================================================
+     EVENTS
+     ============================================================ -->
+<div id="events">
+  <div class="page-hero"><h1>Upcoming Events</h1><p>Workshops, expert sessions, celebrations — all free and open to everyone.</p></div>
+  <section class="section"><div class="container">
+    <div class="section-header"><h2>Upcoming Events</h2><p>Register at <a href="mailto:info@shri-yoga.org" style="color:var(--primary)">info@shri-yoga.org</a> or via our <a href="#contact" style="color:var(--primary)">Contact page</a>.</p></div>
+    <div class="events-full">
+      <div class="event-full-card">
+        <div class="event-full-layout">
+          <div class="event-full-date"><div class="month">MAR</div><div class="day">21</div><div class="year">2026</div></div>
+          <div class="event-full-info"><h3>Shri Yoga Indoor Meet and Greet</h3><p>Join us for a warm community gathering at Clarksburg High School! Come connect with fellow yoga enthusiasts, meet our teachers, and be part of the Shri Yoga family. All are welcome.</p><p style="margin-top:8px;font-size:0.9em;color:var(--text-muted);">📍 Clarksburg High School, 22500 Wims Road, Clarksburg MD 20871<br>🕓 4:30 PM – 10:00 PM</p></div>
+        </div>
+        <div class="event-meta"><span class="meta-tag tag-location">📍 In Person Only</span><span class="meta-tag tag-type">🎉 Community Event</span><span class="meta-tag tag-free">✅ Free</span></div>
+        <a href="https://forms.gle/Uu5VJjXkMRBfw56o8" class="btn btn-primary btn-block" target="_blank" rel="noopener noreferrer">Register Now</a>
+      </div>
+      <div class="event-full-card">
+        <div class="event-full-layout">
+          <div class="event-full-date"><div class="month">MAR</div><div class="day">15</div><div class="year">2025</div></div>
+          <div class="event-full-info"><h3>International Yoga Day 2025 – Special Session</h3><p>A special extended 2-hour practice celebrating yoga with our entire community. Join online or in person at Clarksburg. All levels welcome.</p></div>
+        </div>
+        <div class="event-meta"><span class="meta-tag tag-location">📍 Online &amp; In Person</span><span class="meta-tag tag-type">🧘 Special Session</span><span class="meta-tag tag-free">✅ Free</span></div>
+      </div>
+      <div class="event-full-card">
+        <div class="event-full-layout">
+          <div class="event-full-date"><div class="month">MAR</div><div class="day">22</div><div class="year">2025</div></div>
+          <div class="event-full-info"><h3>Nutrition &amp; Ayurveda Expert Session</h3><p>Workshop covering Ayurvedic principles, seasonal nutrition, and their connection to yoga. Q&amp;A included.</p></div>
+        </div>
+        <div class="event-meta"><span class="meta-tag tag-location">💻 Online (Zoom)</span><span class="meta-tag tag-type">🎓 Expert Workshop</span><span class="meta-tag tag-free">✅ Free</span></div>
+      </div>
+      <div class="event-full-card">
+        <div class="event-full-layout">
+          <div class="event-full-date"><div class="month">APR</div><div class="day">5</div><div class="year">2025</div></div>
+          <div class="event-full-info"><h3>Teacher Appreciation Ceremony 2025</h3><p>Annual celebration honoring our 30+ dedicated volunteer teachers. Ceremony, performances, and community gathering in Germantown, MD.</p></div>
+        </div>
+        <div class="event-meta"><span class="meta-tag tag-location">📍 Germantown, MD</span><span class="meta-tag tag-type">🎉 Community Event</span><span class="meta-tag tag-free">✅ Free</span></div>
+      </div>
+      <div class="event-full-card">
+        <div class="event-full-layout">
+          <div class="event-full-date"><div class="month">APR</div><div class="day">19</div><div class="year">2025</div></div>
+          <div class="event-full-info"><h3>Parkinson's &amp; MS Wellness Session</h3><p>Specialized session for individuals with Parkinson's or MS, led by a medical expert. Gentle yoga, breathwork, and therapeutic movement.</p></div>
+        </div>
+        <div class="event-meta"><span class="meta-tag tag-location">💻 Online (Zoom)</span><span class="meta-tag tag-type">🏥 Health &amp; Wellness</span><span class="meta-tag tag-free">✅ Free</span></div>
+      </div>
+      <div class="event-full-card">
+        <div class="event-full-layout">
+          <div class="event-full-date"><div class="month">MAY</div><div class="day">10</div><div class="year">2025</div></div>
+          <div class="event-full-info"><h3>Kids Yoga Showcase 2025</h3><p>Annual showcase where kids aged 4–14 demonstrate skills, lead mini-classes, and earn SSL volunteer hours!</p></div>
+        </div>
+        <div class="event-meta"><span class="meta-tag tag-location">📍 Maryland &amp; Online</span><span class="meta-tag tag-type">👶 Kids Event</span><span class="meta-tag tag-free">✅ Free</span></div>
+      </div>
+    </div>
+    <div class="section-header" style="margin-top:64px;"><h2>Past Events</h2></div>
+    <div class="events-full" style="opacity:.75;">
+      <div class="event-full-card">
+        <div class="event-full-layout">
+          <div class="event-full-date"><div class="month">JUN</div><div class="day">21</div><div class="year">2024</div></div>
+          <div class="event-full-info"><h3>International Yoga Day 2024</h3><p>Global celebration with hundreds joining from the USA and internationally.</p></div>
+        </div>
+        <div class="event-meta"><span class="meta-tag tag-location">💻 Online</span><span class="past-badge">Completed</span></div>
+        <a href="#videos" class="btn btn-sm btn-blue">Watch Recap</a>
+      </div>
+      <div class="event-full-card">
+        <div class="event-full-layout">
+          <div class="event-full-date"><div class="month">DEC</div><div class="day">15</div><div class="year">2024</div></div>
+          <div class="event-full-info"><h3>Shri Yoga 2024 Annual Recap &amp; Celebration</h3><p>Celebrating the year's achievements and honoring our teachers.</p></div>
+        </div>
+        <div class="event-meta"><span class="meta-tag tag-location">📍 Germantown, MD</span><span class="past-badge">Completed</span></div>
+        <a href="#videos" class="btn btn-sm btn-blue">Watch Recap</a>
+      </div>
+    </div>
+    <div class="cta-box">
+      <h3>Want to Host or Suggest an Event?</h3>
+      <p>We welcome community members who want to host yoga sessions, workshops, or expert talks.</p>
+      <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </div>
+  </div></section>
+</div>
+
+<!-- ============================================================
+     PHOTOS
+     ============================================================ -->
+<div id="photos">
+  <div class="page-hero"><h1>Photo Gallery</h1><p>Moments from our classes, events, and community gatherings.</p></div>
+  <section class="section"><div class="container">
+    <div class="photo-filters">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Classes</button>
+      <button class="filter-btn">Events</button>
+      <button class="filter-btn">Kids Yoga</button>
+      <button class="filter-btn">In-Person</button>
+      <button class="filter-btn">Online</button>
+    </div>
+    <div class="info-banner" style="text-align:center;">
+      <strong>📸 Photo Gallery</strong><br>
+      Upload photos via WordPress Media Library. This gallery will populate automatically once photos are added to the page using the Gallery block or your page builder.
+    </div>
+    <div class="photo-gallery" style="margin-top:28px;">
+      <div class="photo-item"><div class="photo-placeholder" style="height:180px;">🧘</div></div>
+      <div class="photo-item"><div class="photo-placeholder" style="height:140px;">🌬️</div></div>
+      <div class="photo-item"><div class="photo-placeholder" style="height:220px;">👶</div></div>
+      <div class="photo-item"><div class="photo-placeholder" style="height:160px;">🎉</div></div>
+      <div class="photo-item"><div class="photo-placeholder" style="height:200px;">🤸</div></div>
+      <div class="photo-item"><div class="photo-placeholder" style="height:150px;">🧠</div></div>
+      <div class="photo-item"><div class="photo-placeholder" style="height:180px;">🌿</div></div>
+      <div class="photo-item"><div class="photo-placeholder" style="height:160px;">🏫</div></div>
+      <div class="photo-item"><div class="photo-placeholder" style="height:210px;">❤</div></div>
+    </div>
+    <div class="text-center" style="margin-top:40px;">
+      <p style="color:var(--text-light);margin-bottom:16px;">Have photos to share with the community?</p>
+      <a href="#contact" class="btn btn-primary">Submit Photos</a>
+    </div>
+  </div></section>
+</div>
+
+<!-- ============================================================
+     VIDEOS
+     ============================================================ -->
+<div id="videos">
+  <div class="page-hero"><h1>Video Gallery</h1><p>Watch our community in action — class recaps, special events, and media features.</p></div>
+  <section class="section"><div class="container">
+    <div class="section-header"><h2>Featured: Voice of America</h2><p>Shri Sabnis was featured by Voice of America as an inspiring 71-year-old yogi serving his community.</p></div>
+    <div style="max-width:700px;margin:0 auto 56px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);border:3px solid var(--sky);">
+      <div style="position:relative;padding-bottom:56.25%;background:linear-gradient(135deg,var(--primary-xdark),var(--primary));">
+        <div class="video-play-placeholder"><div class="play-btn">▶</div><p style="font-size:14px;opacity:.85;text-align:center;padding:0 16px;">Voice of America – Shri Yoga Documentary</p></div>
+      </div>
+    </div>
+    <div class="section-header"><h2>All Videos</h2></div>
+    <div class="video-grid">
+      <div class="video-card"><div class="video-thumb"><div class="video-play-placeholder"><div class="play-btn">▶</div><p style="font-size:12px;opacity:.8;">Shri Yoga Promo</p></div></div><div class="video-info"><h4>Shri Yoga Promo</h4><p>Introduction to Shri Yoga — our philosophy, classes, and community.</p><span class="video-tag">Promo</span></div></div>
+      <div class="video-card"><div class="video-thumb" style="background:linear-gradient(135deg,var(--primary-dark),var(--sky));"><div class="video-play-placeholder"><div class="play-btn">▶</div><p style="font-size:12px;opacity:.8;">Teacher Appreciation 2020</p></div></div><div class="video-info"><h4>Teacher Appreciation 2020</h4><p>Celebrating the dedicated volunteer teachers of Shri Yoga.</p><span class="video-tag">Event</span></div></div>
+      <div class="video-card"><div class="video-thumb" style="background:linear-gradient(135deg,#01568a,#0274be);"><div class="video-play-placeholder"><div class="play-btn">▶</div><p style="font-size:12px;opacity:.8;">2020 Recap</p></div></div><div class="video-info"><h4>Shri Yoga 2020 Recap</h4><p>Year-in-review from 2020 — our first year as a virtual platform.</p><span class="video-tag">Annual Recap</span></div></div>
+      <div class="video-card"><div class="video-thumb" style="background:linear-gradient(135deg,var(--primary),#43b4e7);"><div class="video-play-placeholder"><div class="play-btn">▶</div><p style="font-size:12px;opacity:.8;">2022 Recap</p></div></div><div class="video-info"><h4>Shri Yoga 2022 Recap</h4><p>Highlights and milestones from 2022 — a year of growth and community.</p><span class="video-tag">Annual Recap</span></div></div>
+      <div class="video-card"><div class="video-thumb" style="background:linear-gradient(135deg,#01aeb7,#43b4e7);"><div class="video-play-placeholder"><div class="play-btn">▶</div><p style="font-size:12px;opacity:.8;">2023 Recap</p></div></div><div class="video-info"><h4>Shri Yoga 2023 Recap</h4><p>Looking back on a vibrant year of classes, events, and achievements.</p><span class="video-tag">Annual Recap</span></div></div>
+      <div class="video-card"><div class="video-thumb" style="background:linear-gradient(135deg,#01334e,#0274be);"><div class="video-play-placeholder"><div class="play-btn">▶</div><p style="font-size:12px;opacity:.8;">2024 Recap</p></div></div><div class="video-info"><h4>Shri Yoga 2024 Recap</h4><p>Celebrating another incredible year with our global yoga family.</p><span class="video-tag">Annual Recap</span></div></div>
+      <div class="video-card"><div class="video-thumb" style="background:linear-gradient(135deg,#01aeb7,#0274be);"><div class="video-play-placeholder"><div class="play-btn">▶</div><p style="font-size:12px;opacity:.8;">Yoga Day 2025</p></div></div><div class="video-info"><h4>International Yoga Day 2025</h4><p>Global celebration of yoga with our worldwide community.</p><span class="video-tag">Special Event</span></div></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<div id="about">
+  <div class="page-hero">
+    <div style="display:flex;align-items:center;justify-content:center;gap:36px;max-width:760px;margin:0 auto;">
+      <div><h1>About Shri Yoga</h1><p>A community-driven non-profit dedicated to making yoga free, accessible, and transformative for everyone.</p></div>
+      <img src="https://shri-yoga.org/wp-content/uploads/2020/08/ShriYoga-Logo.webp" alt="Shri Yoga" style="height:110px;width:auto;flex-shrink:0;filter:drop-shadow(0 2px 10px rgba(0,0,0,0.22));">
+    </div>
+  </div>
+  <section class="section"><div class="container">
+    <div class="section-header"><h2>Our Mission</h2><p>Shri Yoga is a calming but challenging yoga style practiced in an informal group environment — open to everyone, always free.</p></div>
+    <div class="mission-grid">
+      <div class="mission-card"><div class="mission-icon">🤝</div><h3>Community First</h3><p>All classes free and open to everyone — children to seniors, beginners to advanced — hosted at community spaces and volunteer homes.</p></div>
+      <div class="mission-card"><div class="mission-icon">🌍</div><h3>Accessible to All</h3><p>From local Maryland classes to a global virtual platform, we bring yoga to anyone who wants it, wherever they are.</p></div>
+      <div class="mission-card"><div class="mission-icon">💖</div><h3>Selfless Service</h3><p>Driven entirely by volunteer teachers and generous donations — a true community of love, compassion, and shared wellbeing.</p></div>
+    </div>
+  </div></section>
+  <section class="section bg-light"><div class="container">
+    <div class="about-split">
+      <div class="about-image">
+        <img src="media/images/ShriSabnis.png" alt="Shrikant Sabnis" style="width:100%;height:auto;border-radius:12px;display:block;">
+        <div class="about-badge">RYT 200 · 500+ Training Hours · 12+ Years</div>
+      </div>
+      <div class="about-text">
+        <span class="eyebrow">Founder &amp; Lead Instructor</span>
+        <h2>Shrikant "Shri Ji" Sabnis</h2>
+        <p>"Shri Ji" and "Shri Kaka" — more than a yoga teacher. A mentor, father figure, and inspiration to thousands in our community.</p>
+        <p>Retired after 40 years in safety-critical systems (Air Traffic Control, GPS Navigation), he has dedicated his retirement to free yoga for all — traveling 70 miles a day for 12+ years.</p>
+        <p>With an extraordinary gift for remembering names and connecting with people of all ages, he has built a genuine worldwide yoga family.</p>
+        <ul class="about-highlights">
+          <li>✅ Certified RYT 200 — OneAum Yoga, Potomac MD</li>
+          <li>✅ 500+ hours of yoga teacher training</li>
+          <li>✅ Trained in Art of Living Sudarshan Kriya &amp; Vipassana</li>
+          <li>✅ Featured by Voice of America</li>
+        </ul>
+      </div>
+    </div>
+  </div></section>
+  <section class="section"><div class="container">
+    <div class="section-header"><h2>Our Story</h2><p>From local Maryland classes to a global yoga family.</p></div>
+    <div style="max-width:680px;margin:0 auto;">
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2012</div><h4>Local Classes Begin</h4><p>Shri Ji starts teaching free yoga at local temples, community halls, and volunteer homes, reaching ~300 students in the Maryland tri-state area.</p></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2020</div><h4>Going Virtual</h4><p>COVID-19 response: Shri Ji forms a 501(c)(3) non-profit and launches a virtual platform — growing from 300 to 1,200+ students in the USA and internationally.</p></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2021–22</div><h4>Community Grows</h4><p>Platform expands to 70+ weekly classes with 30+ certified volunteer teachers. Kids Yoga, Meditation, Pranayama, and specialty classes added.</p></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2024</div><h4>In-Person Returns</h4><p>In-person classes resume in Clarksburg and SSVT, Maryland. New Osteoporosis and Acupressure programs launched.</p></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">Today</div><h4>A Global Yoga Family</h4><p>A thriving community of students, teachers, and supporters united by yoga, wellness, and selfless service.</p></div>
+      </div>
+    </div>
+  </div></section>
+  <section class="section bg-gradient"><div class="container">
+    <div class="section-header light"><h2>By the Numbers</h2></div>
+    <div class="hero-stats" style="max-width:700px;margin:0 auto;">
+      <div class="stat"><span class="stat-num">70+</span><span class="stat-label">Classes/Week</span></div>
+      <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Teachers</span></div>
+      <div class="stat"><span class="stat-num">1,200+</span><span class="stat-label">Students</span></div>
+      <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Years</span></div>
+    </div>
+  </div></section>
+  <section class="section"><div class="container text-center" style="max-width:620px;margin:0 auto;">
+    <h2>Join the Shri Yoga Family</h2>
+    <p style="color:var(--text-light);margin:14px 0 28px;">Complete beginner or experienced practitioner — there's a place for you. All classes are free — come as you are.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="#classes" class="btn btn-primary">View Schedule</a>
+      <a href="#contact" class="btn btn-outline-blue">Contact Us</a>
+    </div>
+  </div></section>
+</div>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<div id="contact">
+  <div class="page-hero"><h1>Contact Us</h1><p>Questions? Need the Zoom link? Want to join as a teacher? We're here to help.</p></div>
+  <section class="section"><div class="container">
+    <div class="contact-grid">
+      <div class="contact-form-wrap">
+        <h2 style="margin-bottom:8px;">Send Us a Message</h2>
+        <p style="color:var(--text-light);margin-bottom:24px;font-size:14px;">We'll get back to you within 1–2 business days.</p>
+        <form onsubmit="return false;">
+          <div class="form-group"><label>Your Name *</label><input type="text" placeholder="Full name" required></div>
+          <div class="form-group"><label>Email Address *</label><input type="email" placeholder="you@email.com" required></div>
+          <div class="form-group"><label>Phone (optional)</label><input type="tel" placeholder="Your phone number"></div>
+          <div class="form-group"><label>Subject *</label>
+            <select required>
+              <option value="">— Select a topic —</option>
+              <option>Class Info &amp; Zoom Link</option>
+              <option>Event Registration</option>
+              <option>Yoga Info</option>
+              <option>Donation Info</option>
+              <option>Become a Teacher / Volunteer</option>
+              <option>Host a Class</option>
+              <option>General Message</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Message *</label><textarea placeholder="Write your message here..." required></textarea></div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info-cards">
+        <div class="contact-info-card"><div class="contact-info-icon">📧</div><div><h4>Email Us</h4><p>General: <a href="mailto:info@shri-yoga.org">info@shri-yoga.org</a><br>Donations/Zelle: <a href="mailto:president@shri-yoga.org">president@shri-yoga.org</a><br>PayPal: <a href="mailto:admin@shri-yoga.org">admin@shri-yoga.org</a></p></div></div>
+        <div class="contact-info-card"><div class="contact-info-icon">📍</div><div><h4>Mailing Address</h4><p>Shri Yoga Inc.<br>13425 Winterspoon Lane<br>Germantown, MD 20874</p></div></div>
+        <div class="contact-info-card"><div class="contact-info-icon">💻</div><div><h4>Online Classes</h4><p>Virtual classes via Zoom. Contact us for class links and schedule updates.</p></div></div>
+        <div class="contact-info-card"><div class="contact-info-icon">🏫</div><div><h4>In-Person Locations</h4><p>• <strong>Clarksburg, MD</strong><br>• <strong>SSVT, Maryland</strong><br>Contact us for exact addresses and times.</p></div></div>
+        <div class="contact-info-card"><div class="contact-info-icon">❤</div><div><h4>Donate</h4><p>All classes are free — your donation keeps them that way!<br><strong>Zelle:</strong> president@shri-yoga.org<br><strong>PayPal:</strong> admin@shri-yoga.org<br><strong>Check:</strong> "SHRI YOGA INC"</p></div></div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="https://shri-yoga.org/wp-content/uploads/2020/08/ShriYoga-Logo.webp" alt="Shri Yoga">
+      <p>Shri Yoga Inc. · A 501(c)(3) Non-Profit<br>Germantown, Maryland, USA</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#teachers">Teachers</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#donate">Donate</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📧 <a href="mailto:info@shri-yoga.org">info@shri-yoga.org</a></p>
+      <p>📍 13425 Winterspoon Ln<br>Germantown, MD 20874</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Shri Yoga Inc. All rights reserved · 501(c)(3) Non-Profit</p>
+  </div>
+</footer>
+
+<!-- ===== JAVASCRIPT (single copy) ===== -->
+<script>
+// Mobile nav toggle
+function toggleMenu() {
+  const links = document.getElementById('navLinks');
+  const overlay = document.getElementById('navOverlay');
+  const btn = document.getElementById('menuBtn');
+  const open = links.classList.toggle('open');
+  overlay.classList.toggle('open', open);
+  btn.classList.toggle('active', open);
+  document.body.classList.toggle('menu-open', open);
+}
+function closeMenu() {
+  document.getElementById('navLinks').classList.remove('open');
+  document.getElementById('navOverlay').classList.remove('open');
+  document.getElementById('menuBtn').classList.remove('active');
+  document.body.classList.remove('menu-open');
+}
+
+// Scroll-spy: highlight active nav link based on scroll position
+(function () {
+  const sectionIds = ['home', 'classes', 'teachers', 'events', 'photos', 'videos', 'about', 'contact'];
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+  function setActive(id) {
+    navLinks.forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+    });
+  }
+
+  function onScroll() {
+    const scrollY = window.scrollY + 80;
+    let current = sectionIds[0];
+    sectionIds.forEach(function (id) {
+      const el = document.getElementById(id);
+      if (el && el.offsetTop <= scrollY) current = id;
+    });
+    setActive(current);
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
