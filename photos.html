@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#0274be">
+<title>Photos · Shri Yoga</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="announcement-bar">
+  🌟 In-person classes now in Clarksburg &amp; SSVT, Maryland! <a href="classes.html">View Schedule →</a>
+</div>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><img src="https://shri-yoga.org/wp-content/uploads/2020/08/ShriYoga-Logo.webp" alt="Shri Yoga"></a>
+    <button class="hamburger" id="menuBtn" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <button class="nav-close" onclick="toggleMenu()">✕</button>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li><li><a href="classes.html" onclick="closeMenu()">Classes</a></li><li><a href="teachers.html" onclick="closeMenu()">Teachers</a></li><li><a href="events.html" onclick="closeMenu()">Events</a></li><li><a href="photos.html" onclick="closeMenu()" class="active">Photos</a></li><li><a href="videos.html" onclick="closeMenu()">Videos</a></li><li><a href="about.html" onclick="closeMenu()">About</a></li><li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+      <li class="nav-donate-li"><a href="index.html#donate" class="nav-donate-btn" onclick="closeMenu()">❤ Donate</a></li>
+    </ul>
+    <div class="nav-overlay" id="navOverlay" onclick="closeMenu()"></div>
+  </div>
+</nav>
+<div class="page-hero"><h1>Photo Gallery</h1><p>Moments from our classes, events, and community gatherings.</p></div>
+<section class="section"><div class="container">
+  <div class="photo-filters">
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">Classes</button>
+    <button class="filter-btn">Events</button>
+    <button class="filter-btn">Kids Yoga</button>
+    <button class="filter-btn">In-Person</button>
+    <button class="filter-btn">Online</button>
+  </div>
+  <div class="info-banner" style="text-align:center;">
+    <strong>📸 Photo Gallery</strong><br>
+    Upload photos via WordPress Media Library. This gallery will populate automatically once photos are added to the page using the Gallery block or your page builder.
+  </div>
+  <div class="photo-gallery" style="margin-top:28px;">
+    <div class="photo-item"><div class="photo-placeholder" style="height:180px;">🧘</div></div>
+    <div class="photo-item"><div class="photo-placeholder" style="height:140px;">🌬️</div></div>
+    <div class="photo-item"><div class="photo-placeholder" style="height:220px;">👶</div></div>
+    <div class="photo-item"><div class="photo-placeholder" style="height:160px;">🎉</div></div>
+    <div class="photo-item"><div class="photo-placeholder" style="height:200px;">🤸</div></div>
+    <div class="photo-item"><div class="photo-placeholder" style="height:150px;">🧠</div></div>
+    <div class="photo-item"><div class="photo-placeholder" style="height:180px;">🌿</div></div>
+    <div class="photo-item"><div class="photo-placeholder" style="height:160px;">🏫</div></div>
+    <div class="photo-item"><div class="photo-placeholder" style="height:210px;">❤</div></div>
+  </div>
+  <div class="text-center" style="margin-top:40px;">
+    <p style="color:var(--text-light);margin-bottom:16px;">Have photos to share with the community?</p>
+    <a href="contact.html" class="btn btn-primary">Submit Photos</a>
+  </div>
+</div></section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="https://shri-yoga.org/wp-content/uploads/2020/08/ShriYoga-Logo.webp" alt="Shri Yoga">
+      <p>Shri Yoga Inc. · A 501(c)(3) Non-Profit<br>Germantown, Maryland, USA</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="teachers.html">Teachers</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="index.html#donate">Donate</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📧 <a href="mailto:info@shri-yoga.org">info@shri-yoga.org</a></p>
+      <p>📍 13425 Winterspoon Ln<br>Germantown, MD 20874</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Shri Yoga Inc. All rights reserved · 501(c)(3) Non-Profit</p>
+  </div>
+</footer>
+<script>
+function toggleMenu() {
+  const links = document.getElementById('navLinks');
+  const overlay = document.getElementById('navOverlay');
+  const btn = document.getElementById('menuBtn');
+  const open = links.classList.toggle('open');
+  overlay.classList.toggle('open', open);
+  btn.classList.toggle('active', open);
+  document.body.classList.toggle('menu-open', open);
+}
+function closeMenu() {
+  document.getElementById('navLinks').classList.remove('open');
+  document.getElementById('navOverlay').classList.remove('open');
+  document.getElementById('menuBtn').classList.remove('active');
+  document.body.classList.remove('menu-open');
+}
+</script></body></html>
