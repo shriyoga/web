@@ -55,6 +55,9 @@ button{cursor:pointer}
 .text-center{text-align:center}
 .center-btn{text-align:center;margin-top:20px}
 .eyebrow{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px;display:block}
+.skip-link{position:absolute;left:16px;top:-80px;background:#fff;color:var(--primary-xdark);padding:10px 14px;border-radius:var(--radius-sm);box-shadow:var(--shadow-md);font-weight:700;z-index:2000}
+.skip-link:focus{top:12px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
 /* --- Typography --- */
 h1{font-family:'Playfair Display',serif;font-size:30px;line-height:1.25;font-weight:700;letter-spacing:0.3px}
@@ -111,6 +114,7 @@ p{font-size:16px;line-height:1.65}
 .nav-links{position:fixed;top:0;right:-100%;width:min(256px,80vw);height:100vh;background:#fff;z-index:999;flex-direction:column;padding:68px 20px 36px;gap:0;transition:right .3s cubic-bezier(.4,0,.2,1);overflow-y:auto;box-shadow:-4px 0 20px rgba(0,0,0,.09)}
 .nav-links.open{right:0}
 .nav-close{position:absolute;top:16px;right:16px;background:none;border:none;font-size:20px;color:var(--text);cursor:pointer;padding:4px;line-height:1}
+.nav-close-li{border-bottom:none!important}
 .nav-links li{border-bottom:1px solid #f0f4f4}
 .nav-links a{display:block;padding:12px 4px;font-size:15px;font-weight:600;color:#444;transition:color .2s}
 .nav-links a:hover,.nav-links a.active{color:var(--primary-xdark)}
@@ -122,6 +126,7 @@ body.menu-open{overflow:hidden}
 @media(min-width:900px){
   .hamburger{display:none}
   .nav-overlay{display:none!important}
+  .nav-close-li{display:none}
   .nav-close{display:none}
   .nav-links{position:static;width:auto;height:auto;background:none;flex-direction:row;padding:0;gap:20px;transition:none;overflow:visible;box-shadow:none;align-items:center;display:flex}
   .nav-links li{border:none}
@@ -261,7 +266,7 @@ body.menu-open{overflow:hidden}
 /* =====================
    PAGE HERO
    ===================== */
-#classes,#teachers,#events,#photos,#videos,#about,#contact{scroll-margin-top:var(--nav-h)}
+#classes,#teachers,#events,#photos,#videos,#about,#contact,#donate{scroll-margin-top:var(--nav-h)}
 .page-hero{background:linear-gradient(135deg,#b8d8f0 0%,#cfe3f5 58%,#c5dff4 100%);color:#1a2f4a;text-align:center;padding:32px 16px 44px;position:relative;overflow:hidden}
 .page-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:30px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40'%3E%3Cpath fill='%23e5f0fb' d='M0,24L80,21C160,18,320,12,480,16C640,20,800,32,960,32C1120,32,1280,20,1360,14L1440,8L1440,40L0,40Z'/%3E%3C/svg%3E") bottom/cover no-repeat}
 .page-hero h1{margin-bottom:10px;color:#1a2f4a}
@@ -289,9 +294,11 @@ body.menu-open{overflow:hidden}
 .schedule-overflow::-webkit-scrollbar{height:5px}
 .schedule-overflow::-webkit-scrollbar-thumb{background:var(--primary);border-radius:3px}
 .schedule-table{width:100%;border-collapse:collapse;font-size:14px;min-width:700px;background:#fff}
-.schedule-table th{background:var(--primary-xdark);color:#fff;padding:10px 8px;text-align:center;white-space:nowrap;font-size:14px;font-weight:700}
-.schedule-table td{padding:7px 6px;text-align:center;border:1px solid #c8eaee;vertical-align:top;font-size:14px}
-.schedule-table tr:nth-child(even) td{background:#f0f8fd}
+.schedule-table caption{padding:10px;color:var(--text-light);font-weight:700;background:#fff;text-align:left}
+.schedule-table thead th{background:var(--primary-xdark);color:#fff;padding:10px 8px;text-align:center;white-space:nowrap;font-size:14px;font-weight:700}
+.schedule-table tbody th,.schedule-table td{padding:7px 6px;text-align:center;border:1px solid #c8eaee;vertical-align:top;font-size:14px}
+.schedule-table tbody th{color:var(--primary-xdark);font-weight:800;white-space:nowrap;background:#fff}
+.schedule-table tr:nth-child(even) th,.schedule-table tr:nth-child(even) td{background:#f0f8fd}
 .class-pill{display:inline-block;background:var(--primary-light);color:var(--primary-xdark);font-size:13px;font-weight:700;padding:3px 8px;border-radius:50px;margin:2px;white-space:nowrap;line-height:1.4}
 .class-pill.cancelled{background:#ffebee;color:#c62828;text-decoration:line-through}
 
@@ -322,7 +329,9 @@ body.menu-open{overflow:hidden}
 .event-full-date .year{font-size:14px;color:#999}
 .event-full-info h3{font-weight:700;margin-bottom:5px;color:var(--primary-xdark)}
 .event-full-info p{color:#666;line-height:1.55;margin-bottom:8px}
+.event-detail{margin-top:8px;color:var(--text-muted)!important}
 .event-meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
+.events-past-header{margin-top:32px}
 .meta-tag{font-size:13px;font-weight:600;padding:4px 10px;border-radius:50px}
 .tag-location{background:var(--primary-light);color:var(--primary-xdark)}
 .tag-type{background:#fff8e1;color:#b45309}
@@ -354,11 +363,13 @@ body.menu-open{overflow:hidden}
 @media(min-width:768px){.contact-grid{grid-template-columns:1fr 1fr;gap:40px}}
 .contact-form-wrap{background:#fff;border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow)}
 @media(min-width:768px){.contact-form-wrap{padding:30px}}
+.contact-form-wrap h2{margin-bottom:16px}
 .form-group{margin-bottom:16px}
 .form-group label{display:block;font-weight:700;font-size:15px;margin-bottom:5px;color:#444}
 .form-group input,.form-group select,.form-group textarea{width:100%;padding:11px 14px;border:2px solid #cde5ee;border-radius:var(--radius-sm);font-size:15px;font-family:inherit;outline:none;transition:border .2s;-webkit-appearance:none;appearance:none}
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--primary)}
 .form-group textarea{min-height:100px;resize:vertical}
+.form-status{display:none;margin-top:12px;padding:10px 14px;border-radius:var(--radius-sm);font-weight:700;line-height:1.5}
 .contact-info-cards{display:flex;flex-direction:column;gap:12px}
 .contact-info-card{background:#fff;border-radius:var(--radius-sm);padding:16px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:flex-start;border-left:4px solid var(--primary)}
 .contact-info-icon{font-size:20px;flex-shrink:0}
